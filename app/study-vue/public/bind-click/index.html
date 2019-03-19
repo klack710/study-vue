@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>study-js</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="item in list">{{ item }}</li>
+        </ol>
+        <button v-on:click="handleClick">リストにおれんじが増えるよ！</button>
+
+        <p>{{ message }}</p>
+        <input v-model="message">
+
+        <p>{{ num }}</p>
+        <input v-model.number="num">
+
+        <button v-on:click="showMessage">隠しメッセージ</button>
+        <p v-if="is_show">見つかったΣ(・∀・；)</p>
+
+        <button v-on:click="transition_show=!transition_show">ゆっくり現れるよ！</button>
+        <transition>
+            <p v-if="transition_show">Hello</p>
+        </transition>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
