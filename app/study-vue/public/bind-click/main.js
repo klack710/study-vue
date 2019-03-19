@@ -8,10 +8,10 @@ var app = new Vue({
         transition_show: false
     },
     methods: {
-        handleClick: function(event) {
+        handleClick: function (event) {
             app.list.push('おれんじ')
         },
-        showMessage: function(event) {
+        showMessage: function (event) {
             app.is_show = true
         }
     }
