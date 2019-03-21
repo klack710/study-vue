@@ -6,7 +6,7 @@ var app = new Vue({
     link_name: "topに戻る"
   },
   methods: {
-    handleClick: function(event) {
+    handleClick: function (event) {
       app.list.push("おれんじ");
     }
   }
