@@ -11,14 +11,14 @@
 <body>
     <div id="app">
         <ol>
-            <li v-for="item in link_list">
-                <a v-bind:href="item.link_url" v-text="item.link_name"></a>
+            <li v-for="item in link_list" :key="item.id">
+                <a :href="item.href">{{ item.text }}</a>
             </li>
         </ol>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-    <script src="main.js?ver=1.1"></script>
+    <script src="main.js?ver=1.2"></script>
 </body>
 
 </html>
