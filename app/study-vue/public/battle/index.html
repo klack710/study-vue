@@ -12,14 +12,15 @@
     <div id="app">
         <p>モンスターが現れた！</p>
         <ol>
-            <li v-for="monster in monster_list">
-                <p>name: {{ monster.name }}, hp: {{ monster.hp }}</p>
+            <li v-for="(monster, index) in monster_list" :key="monster.id" v-if="monster.hp > 0">
+                <p>name: {{ monster.name }}, hp: {{ monster.hp }} <span v-if="monster.hp > 300">強敵！</span></p>
+                <button v-on:click="doAttack(index)">モンスターを削除</button>
             </li>
         </ol>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js?ver=1.1"></script>
 </body>
 
 </html>
