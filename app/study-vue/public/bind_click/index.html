@@ -14,7 +14,7 @@
         <ol>
             <li v-for="item in list">{{ item }}</li>
         </ol>
-        <button v-on:click="handleClick">リストにおれんじが増えるよ！</button>
+        <button @click="handleClick">リストにおれんじが増えるよ！</button>
 
         <p>{{ message }}</p>
         <input v-model="message">
@@ -22,10 +22,10 @@
         <p>{{ num }}</p>
         <input v-model.number="num">
 
-        <button v-on:click="showMessage">隠しメッセージ</button>
+        <button @click="showMessage">隠しメッセージ</button>
         <p v-if="is_show">見つかったΣ(・∀・；)</p>
 
-        <button v-on:click="transition_show=!transition_show">ゆっくり現れるよ！</button>
+        <button @click="transition_show=!transition_show">ゆっくり現れるよ！</button>
         <transition>
             <p v-if="transition_show">Hello</p>
         </transition>

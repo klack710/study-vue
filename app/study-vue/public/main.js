@@ -17,7 +17,15 @@ var app = new Vue({
       battle: {
         href: "battle/index.html",
         text: "battle"
-      }
+      },
+      computed: {
+        href: "computed/index.html",
+        text: "computed"
+      },
+      sort_list: {
+        href: "sort_list/index.html",
+        text: "sort_list"
+      },
     }
   }
 });
