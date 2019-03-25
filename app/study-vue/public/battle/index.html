@@ -14,7 +14,7 @@
         <ol>
             <li v-for="(monster, index) in monster_list" :key="monster.id" v-if="monster.hp > 0">
                 <p>name: {{ monster.name }}, hp: {{ monster.hp }} <span v-if="monster.hp > 300">強敵！</span></p>
-                <button v-on:click="doAttack(index)">モンスターを削除</button>
+                <button @click="doAttack(index)">モンスターを攻撃</button>
             </li>
         </ol>
     </div>
