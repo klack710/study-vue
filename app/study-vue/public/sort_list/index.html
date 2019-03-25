@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>study-vue</title>
+</head>
+
+<body>
+    <div id="app">
+        <input v-model.number="budget" type="number" /> 円以下に絞り込む
+        <input v-model.number="limit" type="number" /> 件を表示
+        <p>{{ matched.length }} 件中 {{ limited.length }} 件を表示中</p>
+
+        <ul>
+            <li v-for="item in limited" :key="item.id">
+                {{ item.name }} {{ item.price }} 円
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

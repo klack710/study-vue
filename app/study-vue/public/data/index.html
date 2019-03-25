@@ -11,11 +11,10 @@
 
 <body>
     <div id="app">
-        <input type="text" v-bind:value="init_message" />
         <input type="text" :value="init_message" />
 
-        <div v-bind:text-content.prop="text_content_prop"></div>
-        <a href="../" v-bind:text-content.prop="link_name"></a>
+        <div :text-content.prop="text_content_prop"></div>
+        <a href="../" :text-content.prop="link_name"></a>
 
         <p>vueの中身を見てみよう</p>
         <p>{{ $data }}</p>
