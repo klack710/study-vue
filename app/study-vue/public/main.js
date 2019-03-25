@@ -21,7 +21,11 @@ var app = new Vue({
       computed: {
         href: "computed/index.html",
         text: "computed"
-      }
+      },
+      sort_list: {
+        href: "sort_list/index.html",
+        text: "sort_list"
+      },
     }
   }
 });
