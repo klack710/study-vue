@@ -3,16 +3,20 @@ var app = new Vue({
   data: {
     link_list: {
       hello: {
-        link_url: "hello/index.html",
-        link_name: "hello"
+        href: "hello/index.html",
+        text: "hello"
       },
       bind_click: {
-        link_url: "bind_click/index.html",
-        link_name: "bind_click"
+        href: "bind_click/index.html",
+        text: "bind_click"
       },
       data: {
-        link_url: "data/index.html",
-        link_name: "data"
+        href: "data/index.html",
+        text: "data"
+      },
+      battle: {
+        href: "battle/index.html",
+        text: "battle"
       }
     }
   }
