@@ -26,6 +26,10 @@ var app = new Vue({
         href: "sort_list/index.html",
         text: "sort_list"
       },
+      watch: {
+        href: "watch/index.html",
+        text: "watch"
+      },
     }
   }
 });
