@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>study-vue</title>
+</head>
+
+<body>
+    <div id="app">
+        <my-component></my-component>
+        <my-component-in-app></my-component-in-app>
+        <my-component-with-data></my-component-with-data>
+        <comp-child val="A"></comp-child>
+        <comp-child val="B"></comp-child>
+        <comp-child :val="value"></comp-child>
+        <ul>
+            <monster-template v-for="monster in monster_list" :key="monster.id" :name="monster.name" :hp="monster.hp">
+            </monster-template>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
