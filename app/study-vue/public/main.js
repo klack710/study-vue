@@ -33,7 +33,11 @@ var app = new Vue({
       component: {
         href: "component/index.html",
         text: "component"
-      }
+      },
+      transition: {
+        href: "transition/index.html",
+        text: "transition"
+      },
     }
   }
 });

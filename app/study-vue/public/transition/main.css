@@ -1,0 +1,36 @@
+.v-enter-active {
+    transition: opacity 1s, transform 1s;
+}
+
+.v-leave-active {
+    transition: opacity 1s, transform 1s;
+    position: absolute;
+}
+
+.v-enter {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.v-leave-to {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.my-out-in-enter-active {
+    transition: opacity 1s, transform 1s;
+}
+
+.my-out-in-leave-active {
+    transition: opacity 1s, transform 1s;
+}
+
+.my-out-in-enter {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.my-out-in-leave-to {
+    opacity: 0;
+    transform: translateX(100px);
+}
