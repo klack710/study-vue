@@ -30,6 +30,10 @@ var app = new Vue({
         href: "watch/index.html",
         text: "watch"
       },
+      component: {
+        href: "component/index.html",
+        text: "component"
+      },
       transition: {
         href: "transition/index.html",
         text: "transition"
