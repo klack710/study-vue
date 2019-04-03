@@ -30,6 +30,10 @@ var app = new Vue({
         href: "watch/index.html",
         text: "watch"
       },
+      transition: {
+        href: "transition/index.html",
+        text: "transition"
+      },
     }
   }
 });
