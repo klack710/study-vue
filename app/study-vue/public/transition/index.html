@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>study-vue</title>
+    <link rel="stylesheet" href="main.css?ver=1.1" />
+</head>
+
+<body>
+    <div id="app">
+        <transition>
+            <div v-if="show" key="a">TRUE</div>
+            <div v-else key="b">FALSE</div>
+        </transition>
+        <transition name="my-out-in" mode="out-in">
+            <div v-if="show" key="a">TRUE</div>
+            <div v-else key="b">FALSE</div>
+        </transition>
+        <button @click="show=!show">ぬるっと行くよ！</button>
+
+        <transition-group tag="ol">
+            <li v-for="item in sortedList" :key="item.id">
+                {{ item.name }} {{ item.price }}円
+            </li>
+        </transition-group>
+        <button @click="order=!order">入れ替わるよ！</button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="main.js?ver=1.1></script>
+</body>
+
+</html>
