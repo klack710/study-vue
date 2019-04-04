@@ -34,3 +34,7 @@
     opacity: 0;
     transform: translateX(100px);
 }
+
+.v-move {
+    transition: transform 1s;
+}
